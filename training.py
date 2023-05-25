@@ -1,10 +1,18 @@
 """ Enter following details """
 
-main_dir_name = "/home/vagrant/jack_sparrow"
+main_dir_name = input("Enter Path to Main Directory: ")
 
-images_dir = "images"
+num_of_classes = int(input("Enter Number of Labelled Classes: "))
 
-labels_dir = "labels"
+name_of_classes = []
+
+for num in range(num_of_classes):
+    new_class = input("Class {}: ".format(num + 1))
+    name_of_classes.append(new_class)
+
+images_dir = input("Enter Path to Directory With All Images: ")
+
+labels_dir = input("Enter Path to Directory With All Labels: ")
 
 proportion_train_images = 0.9
 
@@ -13,6 +21,44 @@ batchsize = "8"
 epochs = "100"
 img1 = "640"
 img2 = "640"
+
+""" """
+
+for num in num_of_classes:
+    new_class = input("Class {}:".format(num))
+    name_of_classes.append(new_class)
+
+print("Editing custom_data.yaml File with {} Classes of Names {}".format(num_of_classes, name_of_classes))
+
+file_path = '{}/yolov7-main/data/custom_data.yaml'.format(main_dir_name)
+line_numbers = [5, 8]
+new_lines = ['nc: {}'.format(num_of_classes), 'names: {}'.format(name_of_classes)]
+
+with open(file_path, 'r') as file:
+    lines = file.readlines()
+
+for i, line_number in enumerate(line_numbers):
+    if line_number <= len(lines):
+        lines[line_number - 1] = new_lines[i] + '\n'
+
+with open(file_path, 'w') as file:
+    file.writelines(lines)
+
+print("Editing yolov7-custom.yaml File with {} Classes".format(num_of_classes))
+
+file_path2 = '{}/yolov7-main/cfg/training/yolov7-custom.yaml'.format(main_dir_name)
+line_numbers2 = [2]
+new_lines2 = ['nc: {}'.format(num_of_classes)]
+
+with open(file_path2, 'r') as file2:
+    lines2 = file2.readlines()
+
+for i2, line_number2 in enumerate(line_numbers2):
+    if line_number2 <= len(lines2):
+        lines2[line_number2 - 1] = new_lines2[i2] + '\n'
+
+with open(file_path2, 'w') as file2:
+    file2.writelines(lines2)
 
 import os
 import shutil
@@ -34,7 +80,7 @@ os.makedirs(destination_folder_vl)
 import os
 import shutil
 
-source_directory = '{}/{}'.format(main_dir_name, images_dir)
+source_directory = '{}'.format(images_dir)
 destination_directory_1 = destination_folder_ti
 destination_directory_2 = destination_folder_vi
 
@@ -55,7 +101,7 @@ for file in files[num_files_to_move:]:
         destination_path = os.path.join(destination_directory_2, file)
         shutil.move(source_path, destination_path)
 
-source_directory2 = '{}/{}'.format(main_dir_name, labels_dir)
+source_directory2 = '{}'.format(labels_dir)
 destination_directory_3 = destination_folder_tl
 destination_directory_4 = destination_folder_vl
 
@@ -74,8 +120,8 @@ for file in files2[num_files_to_move:]:
         destination_path = os.path.join(destination_directory_4, file)
         shutil.move(source_path, destination_path)
 
-shutil.rmtree('{}/{}'.format(main_dir_name, images_dir))
-shutil.rmtree('{}/{}'.format(main_dir_name, labels_dir))
+shutil.rmtree('{}'.format(images_dir))
+shutil.rmtree('{}'.format(labels_dir))
 
 print("Training Begins")
 
