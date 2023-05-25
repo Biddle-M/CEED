@@ -1,9 +1,10 @@
 """ Enter following details """
 
-main_dir_name = "/Users/michaelbiddle/CEED_RP/jack_sparrow"
+main_dir_name = input("Enter Path to Main Directory: ")
 
-test_images_dir = "test_images"
+test_images_dir = input("Enter Path to Directory With All Testing Images: ")
 
+""" """
 
 import os
 import shutil
@@ -20,14 +21,14 @@ shutil.move(source_path, destination_path)
 
 count = 0
 
-for root, dirs, files in os.walk("{}/{}".format(main_dir_name, test_images_dir)):
+for root, dirs, files in os.walk("{}".format(test_images_dir)):
     for file in files:
         count += 1
         source_path = os.path.join(root, file)
         destination_path = os.path.join("{}/yolov7-main".format(main_dir_name), "{}.jpg".format(count))
         shutil.move(source_path, destination_path)
 
-shutil.rmtree('{}/{}'.format(main_dir_name, test_images_dir))
+shutil.rmtree('{}'.format(test_images_dir))
 
 import subprocess
 
