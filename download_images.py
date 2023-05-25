@@ -1,10 +1,19 @@
 """ Enter following details """
 
-main_dir_name = "/home/vagrant/jack_sparrow"
+main_dir_name = input("Enter Path to Main Directory: ")
 
-keywords = ["johnny depp jack", "jack sparrow"]
+num_keywords = int(input("Enter Number of Keywords: "))
 
-num_of_images = 20
+keywords = []
+
+for num in range(num_keywords):
+     new_keyword = input("Keyword {}: ".format(num + 1))
+     keywords.append(new_keyword)
+
+num_of_images = int(input("Number of Images to Search for Each Keyword: "))
+
+print(main_dir_name)
+print(keywords)
 
 """ """
 
@@ -15,7 +24,7 @@ from simple_image_download import simple_image_download as simp
 response = simp.simple_image_download
 
 for kw in keywords:
-    print("Generating Images for Keyword:{}".format(kw))
+    print("Generating Images for Keyword: {}".format(kw))
     response().download(kw, num_of_images)
 
 print("Image Collection Completed")
