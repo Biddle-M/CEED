@@ -31,7 +31,7 @@ for num in num_of_classes:
 
 print("Editing custom_data.yaml File with {} Classes of Names {}".format(num_of_classes, name_of_classes))
 
-file_path = '{}/yolov7-main/data/custom_data.yaml'.format(main_dir_name)
+file_path = '{}/yolov7/data/custom_data.yaml'.format(main_dir_name)
 line_numbers = [5, 8]
 new_lines = ['nc: {}'.format(num_of_classes), 'names: {}'.format(name_of_classes)]
 
@@ -47,7 +47,7 @@ with open(file_path, 'w') as file:
 
 print("Editing yolov7-custom.yaml File with {} Classes".format(num_of_classes))
 
-file_path2 = '{}/yolov7-main/cfg/training/yolov7-custom.yaml'.format(main_dir_name)
+file_path2 = '{}/yolov7/cfg/training/yolov7-custom.yaml'.format(main_dir_name)
 line_numbers2 = [2]
 new_lines2 = ['nc: {}'.format(num_of_classes)]
 
@@ -66,13 +66,13 @@ import shutil
 
 print("Creating Destination Folders")
 
-os.makedirs('{}/yolov7-main/data/train'.format(main_dir_name))
-os.makedirs('{}/yolov7-main/data/val'.format(main_dir_name))
+os.makedirs('{}/yolov7/data/train'.format(main_dir_name))
+os.makedirs('{}/yolov7/data/val'.format(main_dir_name))
 
-destination_folder_ti = '{}/yolov7-main/data/train/images'.format(main_dir_name)
-destination_folder_tl = '{}/yolov7-main/data/train/labels'.format(main_dir_name)
-destination_folder_vi = '{}/yolov7-main/data/val/images'.format(main_dir_name)
-destination_folder_vl = '{}/yolov7-main/data/val/labels'.format(main_dir_name)
+destination_folder_ti = '{}/yolov7/data/train/images'.format(main_dir_name)
+destination_folder_tl = '{}/yolov7/data/train/labels'.format(main_dir_name)
+destination_folder_vi = '{}/yolov7/data/val/images'.format(main_dir_name)
+destination_folder_vl = '{}/yolov7/data/val/labels'.format(main_dir_name)
 os.makedirs(destination_folder_ti)
 os.makedirs(destination_folder_tl)
 os.makedirs(destination_folder_vi)
@@ -129,4 +129,4 @@ print("Training Begins")
 import subprocess
 
 script_path = "/path/to/your_script.py"
-subprocess.run(["python", "{}/yolov7-main/train.py".format(main_dir_name), "--workers", workers, "--device", device, "--batch-size", batchsize, "--epochs", epochs, "--img", img1, img2, "--data", "data/custom_data.yaml", "--hyp", "data/hyp.scratch.custom.yaml", "--cfg", "cfg/training/yolov7-custom.yaml", "--name", "yolov7-custom", "--weights", "yolov7.pt"])
+subprocess.run(["python", "{}/yolov7/train.py".format(main_dir_name), "--workers", workers, "--device", device, "--batch-size", batchsize, "--epochs", epochs, "--img", img1, img2, "--data", "data/custom_data.yaml", "--hyp", "data/hyp.scratch.custom.yaml", "--cfg", "cfg/training/yolov7-custom.yaml", "--name", "yolov7-custom", "--weights", "yolov7.pt"])
