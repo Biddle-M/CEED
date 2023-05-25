@@ -12,9 +12,6 @@ for num in range(num_keywords):
 
 num_of_images = int(input("Number of Images to Search for Each Keyword: "))
 
-print(main_dir_name)
-print(keywords)
-
 """ """
 
 print("Generating {} Images Per Keyword From Google".format(num_of_images))
