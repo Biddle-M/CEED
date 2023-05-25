@@ -1,10 +1,14 @@
 """ Enter following details """
 
-main_dir_name = "/home/vagrant/jack_sparrow"
+main_dir_name = input("Enter Path to Main Directory: ")
 
-num_of_classes = 1
+num_of_classes = int(input("Enter Number of Labelled Classes: "))
 
-name_of_classes = ['Jack Sparrow']
+name_of_classes = []
+
+for num in range(num_of_classes):
+    new_class = input("Class {}: ".format(num + 1))
+    name_of_classes.append(new_class)
 
 print("Editing custom_data.yaml File with {} Classes of Names {}".format(num_of_classes, name_of_classes))
 
