@@ -128,5 +128,4 @@ print("Training Begins")
 
 import subprocess
 
-script_path = "/path/to/your_script.py"
 subprocess.run(["python", "{}/yolov7/train.py".format(main_dir_name), "--workers", workers, "--device", device, "--batch-size", batchsize, "--epochs", epochs, "--img", img1, img2, "--data", "data/custom_data.yaml", "--hyp", "data/hyp.scratch.custom.yaml", "--cfg", "cfg/training/yolov7-custom.yaml", "--name", "yolov7-custom", "--weights", "yolov7.pt"])
