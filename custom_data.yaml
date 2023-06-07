@@ -1,5 +1,5 @@
-train: ./data/train
-val: ./data/val
+train: /home/mbiddle/yolov7/data/train
+val: /home/mbiddle/yolov7/data/val
 
 # number of classes
 nc: 1
