@@ -25,10 +25,6 @@ img2 = "640"
 
 """ """
 
-for num in num_of_classes:
-    new_class = input("Class {}:".format(num))
-    name_of_classes.append(new_class)
-
 print("Editing custom_data.yaml File with {} Classes of Names {}".format(num_of_classes, name_of_classes))
 
 file_path = '{}/yolov7/data/custom_data.yaml'.format(main_dir_name)
