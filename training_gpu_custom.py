@@ -1,14 +1,18 @@
 """ Enter following details """
 
-main_dir_name = "/home/mbiddle"
+main_dir_name = input("Enter Path to Main Directory: ")
 
-num_of_classes = 1
+num_of_classes = int(input("Enter Number of Labelled Classes: "))
 
-name_of_classes = ["Jack Sparrow"]
+name_of_classes = []
 
-images_dir = "/group/pmc013/mbiddle/images"
+for num in range(num_of_classes):
+    new_class = input("Class {}: ".format(num + 1))
+    name_of_classes.append(new_class)
 
-labels_dir = "/group/pmc013/mbiddle/labels"
+images_dir = input("Enter Path to Directory With All Images: ")
+
+labels_dir = input("Enter Path to Directory With All Labels: ")
 
 proportion_train_images = 0.9
 
@@ -23,7 +27,7 @@ img2 = "640"
 
 print("Editing custom_data.yaml File with {} Classes of Names {}".format(num_of_classes, name_of_classes))
 
-file_path = '{}/yolov7/data/custom_data.yaml'.format(main_dir_name)
+file_path = '{}/yolov7/data/coco.yaml'.format(main_dir_name)
 line_numbers = [5, 8]
 new_lines = ['nc: {}'.format(num_of_classes), 'names: {}'.format(name_of_classes)]
 
@@ -39,7 +43,7 @@ with open(file_path, 'w') as file:
 
 print("Editing yolov7-custom.yaml File with {} Classes".format(num_of_classes))
 
-file_path2 = '{}/yolov7/cfg/training/yolov7-custom.yaml'.format(main_dir_name)
+file_path2 = '{}/yolov7/cfg/training/yolov7.yaml'.format(main_dir_name)
 line_numbers2 = [2]
 new_lines2 = ['nc: {}'.format(num_of_classes)]
 
@@ -120,4 +124,4 @@ print("Training Begins")
 
 import subprocess
 
-subprocess.run(["python", "{}/yolov7/train.py".format(main_dir_name), "--workers", workers, "--device", device, "--batch-size", batchsize, "--epochs", epochs, "--img", img1, img2, "--data", "data/custom_data.yaml", "--hyp", "data/hyp.scratch.custom.yaml", "--cfg", "cfg/training/yolov7-custom.yaml", "--name", "yolov7-custom", "--weights", "yolov7.pt"])
+subprocess.run(["python", "{}/yolov7/train.py".format(main_dir_name), "--workers", workers, "--device", device, "--batch-size", batchsize, "--epochs", epochs, "--img", img1, img2, "--data", "data/coco.yaml", "--hyp", "data/hyp.scratch.custom.yaml", "--cfg", "cfg/training/yolov7.yaml", "--name", "yolov7-custom", "--weights", "yolov7.pt"])
