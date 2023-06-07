@@ -1,18 +1,14 @@
 """ Enter following details """
 
-main_dir_name = input("Enter Path to Main Directory: ")
+main_dir_name = "/home/mbiddle"
 
-num_of_classes = int(input("Enter Number of Labelled Classes: "))
+num_of_classes = 1
 
-name_of_classes = []
+name_of_classes = ["Jack Sparrow"]
 
-for num in range(num_of_classes):
-    new_class = input("Class {}: ".format(num + 1))
-    name_of_classes.append(new_class)
+images_dir = "/group/pmc013/mbiddle/images"
 
-images_dir = input("Enter Path to Directory With All Images: ")
-
-labels_dir = input("Enter Path to Directory With All Labels: ")
+labels_dir = "/group/pmc013/mbiddle/labels"
 
 proportion_train_images = 0.9
 
