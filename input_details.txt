@@ -1,0 +1,8 @@
+main_dir_name=/home/mbiddle
+num_of_classes=1
+name_of_classes=Jack_Sparrow
+images_dir=/group/pmc013/mbiddle/images
+labels_dir=/group/pmc013/mbiddle/labels
+training_results_dir=/scratch/pmc013/mbiddle/CEED
+batch_number=93615
+test_images_dir=/group/pmc013/mbiddle/test_images
