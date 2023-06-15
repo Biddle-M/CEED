@@ -3,7 +3,7 @@
 #  the partition is the queue your submit your job to 
 # there is a day partition max walltime 24:00:00
 # there is a week partition maxx walltime is 7-00:00:00
-#SBATCH --partition=day
+#SBATCH --partition=gpu
 # the nodes is the number computes
 #SBATCH --nodes=1
 # the ntasks is number of cpu cores  max number is 34
@@ -22,7 +22,7 @@ module list
 
 #  Note: SLURM_JOBID is a unique number for every job.
 #  These are generic variables
-SCRIPT=training_gpu.py
+SCRIPT=testing_custom.py
 # qqto use NVMe uncomment this following line
 # SCRATCH=/tmp/$USER/run_conda/$SLURM_JOBID
 # to use MYSCRATCH space
@@ -50,24 +50,24 @@ cd ${SLURM_SUBMIT_DIR}
 
 #cp ${DATA_DIR}/* ${SCRATCH}
 # copy the mothur analysis script to SCRATCH
-cp *.py ${SCRATCH}
+cp $SCRIPT ${SCRATCH}
 
 cd ${SCRATCH}
 
 ls -al
 
-python ./training.py
+python $SCRIPT
 
 #############################################
 #    $OUTPUT file to the unique results dir
 # note this can be a copy or move  
-cd $HOME
-mv ${SCRATCH} ${RESULTS}
+#cd $HOME
+#mv ${SCRATCH} ${RESULTS}
 
 ###########################
 # Clean up $SCRATCH 
 
-rm -r $SCRATCH
+#rm -r $SCRATCH
 
 echo Conda ML gpu job finished at  `date`
 
