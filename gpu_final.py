@@ -79,9 +79,6 @@ os.makedirs(destination_folder_tl)
 os.makedirs(destination_folder_vi)
 os.makedirs(destination_folder_vl)
 
-import os
-import shutil
-
 source_directory = '{}'.format(images_dir)
 destination_directory_1 = destination_folder_ti
 destination_directory_2 = destination_folder_vi
@@ -157,8 +154,6 @@ for root, dirs, files in os.walk("{}".format(test_images_dir)):
             shutil.move(source_path, destination_path)
 
 shutil.rmtree('{}'.format(test_images_dir))
-
-import subprocess
 
 print('Detection Begins')
 
