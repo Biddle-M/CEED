@@ -23,7 +23,7 @@ img2 = "640"
 
 print("Editing custom_data.yaml File with {} Classes of Names {}".format(num_of_classes, name_of_classes))
 
-file_path = '{}/yolov7/data/coco.yaml'.format(main_dir_name)
+file_path = '{}/yolov7/data/custom_data.yaml'.format(main_dir_name)
 line_numbers = [5, 8]
 new_lines = ['nc: {}'.format(num_of_classes), 'names: {}'.format(name_of_classes)]
 
@@ -55,8 +55,6 @@ with open(file_path2, 'w') as file2:
 
 import os
 import shutil
-
-print("Creating Destination Folders")
 
 os.makedirs('{}/yolov7/data/train'.format(main_dir_name))
 os.makedirs('{}/yolov7/data/val'.format(main_dir_name))
@@ -120,4 +118,9 @@ print("Training Begins")
 
 import subprocess
 
-subprocess.run(["python", "{}/yolov7/train.py".format(main_dir_name), "--workers", workers, "--device", device, "--batch-size", batchsize, "--epochs", epochs, "--img", img1, img2, "--data", "data/coco.yaml", "--hyp", "data/hyp.scratch.custom.yaml", "--cfg", "cfg/training/yolov7.yaml", "--name", "yolov7-custom", "--weights", "yolov7.pt"])
+subprocess.run(["python", "{}/yolov7/train.py".format(main_dir_name), "--workers", workers, "--device", device, "--batch-size", batchsize, "--epochs", epochs, "--img", img1, img2, "--data", "{}/yolov7/data/custom_data.yaml".format(main_dir_name), "--hyp", "{}/yolov7/data/hyp.scratch.custom.yaml".format(main_dir_name), "--cfg", "{}/yolov7/cfg/training/yolov7.yaml".format(main_dir_name), "--name", "yolov7-custom", "--weights", "{}/yolov7/yolov7.pt".format(main_dir_name)])
+
+print("Training Completed")
+
+shutil.rmtree('{}/yolov7/data/train'.format(main_dir_name))
+shutil.rmtree('{}/yolov7/data/val'.format(main_dir_name))

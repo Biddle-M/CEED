@@ -22,15 +22,13 @@ labels_dir = variables['labels_dir']
 training_results_dir = variables['training_results_dir']
 batch_number = int(variables['batch_number'])
 test_images_dir = variables['test_images_dir']
-
-proportion_train_images = 0.9
-
-workers = "1"
-device = "0"
-batchsize = "8"
-epochs = "100"
-img1 = "640"
-img2 = "640"
+proportion_train_images = int(variables['proportion_train_images'])
+workers = variables['workers']
+device = variables['device']
+batchsize = variables['batchsize']
+epochs = variables['epochs']
+img1 = variables['img1']
+img2 = variables['img2']
 
 """ """
 

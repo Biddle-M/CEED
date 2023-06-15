@@ -13,6 +13,16 @@ test_images_dir = "/group/pmc013/mbiddle/test_images"
 import os
 import shutil
 
+print("Moving best.pt Into yolov7 Directory")
+
+file_name = "best.pt"
+new_file_name = "yolov7_custom.pt"
+source_directory = '{}/{}/runs/train/yolov7-custom/weights'.format(training_results_dir, batch_number)
+destination_directory = "{}/yolov7".format(main_dir_name)
+source_path = os.path.join(source_directory, file_name)
+destination_path = os.path.join(destination_directory, new_file_name)
+shutil.move(source_path, destination_path)
+
 count = 0
 
 for root, dirs, files in os.walk("{}".format(test_images_dir)):
@@ -27,20 +37,10 @@ shutil.rmtree('{}'.format(test_images_dir))
 
 import subprocess
 
+print("Detection Begins")
+
 for num in range(1, count + 1):
-    subprocess.run(["python", "{}/yolov7/detect.py".format(main_dir_name), "--weights", '{}/{}/runs/train/yolov7-custom/weights/best.pt'.format(training_results_dir, batch_number), "--conf", "0.5", "--img-size", "640", "--source", "{}.jpg".format(num), "--no-trace"])
+    subprocess.run(["python", "{}/yolov7/detect.py".format(main_dir_name), "--weights", "{}/yolov7/yolov7_custom.pt".format(main_dir_name), "--conf", "0.5", "--img-size", "640", "--source", "{}/yolov7/{}.jpg".format(main_dir_name, num), "--no-trace"])
     os.remove('{}/yolov7/{}.jpg'.format(main_dir_name, num))
 
-os.makedirs('{}/test_results'.format(main_dir_name))
-
-for num in range(1, count + 1):
-    if num == 1:
-        source_directory = '{}/yolov7/runs/detect/exp'.format(main_dir_name)
-    else:
-        source_directory = '{}/yolov7/runs/detect/exp{}'.format(main_dir_name, num)
-    destination_directory = "{}/test_results".format(main_dir_name)
-    source_path = os.path.join(source_directory, "{}.jpg".format(num))
-    destination_path = os.path.join(destination_directory, "test_{}.jpg".format(num))
-    shutil.move(source_path, destination_path)
-
-shutil.rmtree('{}/yolov7/runs'.format(main_dir_name))
+print("Detection Completed")
