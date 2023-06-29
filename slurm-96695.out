@@ -1,0 +1,712 @@
+Currently Loaded Modulefiles:
+ 1) Anaconda3/2020.11(default)  
+Working SCRATCH directory is /scratch/pmc013/mbiddle/CEED/Test_4
+Results will be store in /group/pmc013/mbiddle/CEED_results/96695
+total 2
+drwxrwxr-x 2 mbiddle mbiddle    0 Jun 27 08:04 .
+drwxrwxr-x 8 mbiddle mbiddle    0 Jun 27 08:04 ..
+-rw-rw-r-- 1 mbiddle mbiddle 1511 Jun 27 08:04 testing_custom.py
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/1.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+12 Pipe Bends, Done. (7.9ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp/1.jpg
+Done. (0.479s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/2.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp2/2.jpg
+Done. (0.472s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/3.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.7ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp3/3.jpg
+Done. (0.476s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/4.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+4 Pipe Bends, Done. (6.3ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp4/4.jpg
+Done. (0.456s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/5.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp5/5.jpg
+Done. (0.468s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/6.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (7.9ms) Inference, (1.4ms) NMS
+ The image with the result is saved in: runs/detect/exp6/6.jpg
+Done. (0.447s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/7.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (8.1ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp7/7.jpg
+Done. (0.484s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/8.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (6.3ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp8/8.jpg
+Done. (0.460s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/9.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (8.0ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp9/9.jpg
+Done. (0.416s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/10.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (7.9ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp10/10.jpg
+Done. (0.497s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/11.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp11/11.jpg
+Done. (0.462s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/12.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp12/12.jpg
+Done. (0.423s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/13.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp13/13.jpg
+Done. (0.441s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/14.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+4 Pipe Bends, Done. (7.8ms) Inference, (1.4ms) NMS
+ The image with the result is saved in: runs/detect/exp14/14.jpg
+Done. (0.425s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/15.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+6 Pipe Bends, Done. (6.3ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp15/15.jpg
+Done. (0.462s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/16.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (7.9ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp16/16.jpg
+Done. (0.478s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/17.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp17/17.jpg
+Done. (0.438s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/18.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+5 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp18/18.jpg
+Done. (0.468s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/19.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (6.7ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp19/19.jpg
+Done. (0.478s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/20.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+6 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp20/20.jpg
+Done. (0.490s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/21.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (8.0ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp21/21.jpg
+Done. (0.489s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/22.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+6 Pipe Bends, Done. (7.9ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp22/22.jpg
+Done. (0.472s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/23.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (7.9ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp23/23.jpg
+Done. (0.465s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/24.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp24/24.jpg
+Done. (0.474s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/25.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp25/25.jpg
+Done. (0.466s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/26.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (6.3ms) Inference, (1.2ms) NMS
+ The image with the result is saved in: runs/detect/exp26/26.jpg
+Done. (0.429s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/27.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp27/27.jpg
+Done. (0.438s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/28.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp28/28.jpg
+Done. (0.459s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/29.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp29/29.jpg
+Done. (0.473s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/30.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.3ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp30/30.jpg
+Done. (0.411s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/31.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp31/31.jpg
+Done. (0.467s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/32.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (7.9ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp32/32.jpg
+Done. (0.448s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/33.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp33/33.jpg
+Done. (0.462s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/34.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+4 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp34/34.jpg
+Done. (0.473s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/35.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp35/35.jpg
+Done. (0.443s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/36.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp36/36.jpg
+Done. (0.458s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/37.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp37/37.jpg
+Done. (0.488s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/38.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.3ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp38/38.jpg
+Done. (0.148s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/39.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.6ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp39/39.jpg
+Done. (0.475s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/40.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (7.9ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp40/40.jpg
+Done. (0.423s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/41.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.5ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp41/41.jpg
+Done. (0.473s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/42.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.4ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp42/42.jpg
+Done. (0.443s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/43.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (8.0ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp43/43.jpg
+Done. (0.477s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/44.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.3ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp44/44.jpg
+Done. (0.467s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/45.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (7.8ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/exp45/45.jpg
+Done. (0.440s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/46.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (8.0ms) Inference, (1.4ms) NMS
+ The image with the result is saved in: runs/detect/exp46/46.jpg
+Done. (0.479s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/47.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+3 Pipe Bends, Done. (6.3ms) Inference, (1.2ms) NMS
+ The image with the result is saved in: runs/detect/exp47/47.jpg
+Done. (0.437s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/48.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+1 Pipe Bend, Done. (7.9ms) Inference, (1.4ms) NMS
+ The image with the result is saved in: runs/detect/exp48/48.jpg
+Done. (0.185s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/49.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+9 Pipe Bends, Done. (6.4ms) Inference, (1.2ms) NMS
+ The image with the result is saved in: runs/detect/exp49/49.jpg
+Done. (0.131s)
+YOLOR 🚀 v0.1-122-g3b41c2c torch 2.0.1+cu117 CUDA:0 (Tesla V100-PCIE-32GB, 32510.6875MB)
+
+Model Summary: 314 layers, 36481772 parameters, 6194944 gradients
+/home/mbiddle/.conda/envs/CEED/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Namespace(weights=['/home/mbiddle/yolov7/yolov7_custom.pt'], source='/home/mbiddle/yolov7/50.jpg', img_size=640, conf_thres=0.5, iou_thres=0.45, device='', view_img=False, save_txt=False, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='exp', exist_ok=False, no_trace=True)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+2 Pipe Bends, Done. (6.3ms) Inference, (1.3ms) NMS
+ The image with the result is saved in: runs/detect/exp50/50.jpg
+Done. (0.448s)
+Moving best.pt Into yolov7 Directory
+Detection Begins
+Detection Completed
+Conda ML gpu job finished at Tue Jun 27 08:09:33 AWST 2023
