@@ -1,8 +1,8 @@
-""" """
+"""
 
 print('Extracting variables from input_details.txt')
 
-text_file = 'input_details.txt'
+text_file = '/home/mbiddle/CEED/input_details.txt'
 
 with open(text_file, 'r') as file:
     content = file.readlines()
@@ -20,19 +20,44 @@ name_of_classes = variables['name_of_classes']
 images_dir = variables['images_dir']
 labels_dir = variables['labels_dir']
 training_results_dir = variables['training_results_dir']
-batch_number = int(variables['batch_number'])
+batch_number = variables['batch_number']
 test_images_dir = variables['test_images_dir']
-proportion_train_images = int(variables['proportion_train_images'])
-workers = variables['workers']
-device = variables['device']
-batchsize = variables['batchsize']
-epochs = variables['epochs']
-img1 = variables['img1']
-img2 = variables['img2']
+proportion_train_images = '0.9'
+workers = '1'
+device = '0'
+batchsize = '8'
+epochs = '100'
+img1 = '640'
+img2 = '640'
 
-""" """
+"""
 
-print'Editing custom_data.yaml File with {} Classes of Names {}'.format(num_of_classes, name_of_classes))
+main_dir_name = "/home/mbiddle"
+
+num_of_classes = 1
+
+name_of_classes = ["Radiator"]
+
+images_dir = "/group/pmc013/mbiddle/images"
+
+labels_dir = "/group/pmc013/mbiddle/labels"
+
+proportion_train_images = 0.9
+
+workers = "1"
+device = "0"
+batchsize = "8"
+epochs = "100"
+img1 = "640"
+img2 = "640"
+
+training_results_dir = "/scratch/pmc013/mbiddle/CEED"
+
+batch_number = 'radiators'
+
+test_images_dir = "/group/pmc013/mbiddle/test_images"
+
+print('Editing custom_data.yaml File with {} Classes of Names {}'.format(num_of_classes, name_of_classes))
 
 file_path = '{}/yolov7/data/custom_data.yaml'.format(main_dir_name)
 line_numbers = [5, 8]
@@ -86,7 +111,7 @@ destination_directory_2 = destination_folder_vi
 files = os.listdir(source_directory)
 files.sort()
 
-num_files_to_move = round(len(files) * proportion_train_images)
+num_files_to_move = round(len(files) * 0.9)
 
 for file in files[:num_files_to_move]:
     if not file.startswith('.DS_Store'):
@@ -119,8 +144,8 @@ for file in files2[num_files_to_move:]:
         destination_path = os.path.join(destination_directory_4, file)
         shutil.move(source_path, destination_path)
 
-shutil.rmtree('{}'.format(images_dir))
-shutil.rmtree('{}'.format(labels_dir))
+#shutil.rmtree('{}'.format(images_dir))
+#shutil.rmtree('{}'.format(labels_dir))
 
 print('Training Begins')
 

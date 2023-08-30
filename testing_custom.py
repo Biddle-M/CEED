@@ -4,7 +4,7 @@ main_dir_name = "/home/mbiddle"
 
 training_results_dir = "/scratch/pmc013/mbiddle/CEED"
 
-batch_number = '93615'
+batch_number = 'pipe_bends2'
 
 test_images_dir = "/group/pmc013/mbiddle/test_images"
 
@@ -40,7 +40,7 @@ import subprocess
 print("Detection Begins")
 
 for num in range(1, count + 1):
-    subprocess.run(["python", "{}/yolov7/detect.py".format(main_dir_name), "--weights", "{}/yolov7/yolov7_custom.pt".format(main_dir_name), "--conf", "0.5", "--img-size", "640", "--source", "{}/yolov7/{}.jpg".format(main_dir_name, num), "--no-trace"])
+    subprocess.run(["python", "{}/yolov7/detect.py".format(main_dir_name), "--weights", "{}/yolov7/yolov7_custom.pt".format(main_dir_name), "--conf", "0.5", "--img-size", "640", "--save-txt", "--source", "{}/yolov7/{}.jpg".format(main_dir_name, num), "--no-trace"])
     os.remove('{}/yolov7/{}.jpg'.format(main_dir_name, num))
 
 print("Detection Completed")

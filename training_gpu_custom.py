@@ -4,7 +4,7 @@ main_dir_name = "/home/mbiddle"
 
 num_of_classes = 1
 
-name_of_classes = ["Jack Sparrow"]
+name_of_classes = ["Radiator"]
 
 images_dir = "/group/pmc013/mbiddle/images"
 
@@ -122,5 +122,5 @@ subprocess.run(["python", "{}/yolov7/train.py".format(main_dir_name), "--workers
 
 print("Training Completed")
 
-shutil.rmtree('{}/yolov7/data/train'.format(main_dir_name))
-shutil.rmtree('{}/yolov7/data/val'.format(main_dir_name))
+#shutil.rmtree('{}/yolov7/data/train'.format(main_dir_name))
+#shutil.rmtree('{}/yolov7/data/val'.format(main_dir_name))

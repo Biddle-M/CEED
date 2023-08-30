@@ -11,8 +11,9 @@
 #  gres defines the number of gpus: 1 or 2 
 #SBATCH --gres=gpu:v100:1
 #  walltime the max time is dependent on partition
-#SBATCH --time=01:00:00
+#SBATCH --time=12:00:00
 #SBATCH --export=ALL
+#SBATCH --mem=0
 
 # To configure GNU Environment for Mothur
 module load Anaconda3/2020.11
@@ -26,7 +27,7 @@ SCRIPT=testing_custom.py
 # qqto use NVMe uncomment this following line
 # SCRATCH=/tmp/$USER/run_conda/$SLURM_JOBID
 # to use MYSCRATCH space
-SCRATCH=$MYSCRATCH/CEED/$SLURM_JOBID
+SCRATCH=$MYSCRATCH/CEED/pipe_bends2_txt
 RESULTS=$MYGROUP/CEED_results
 
 ###############################################
