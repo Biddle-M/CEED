@@ -40,6 +40,6 @@ for folder in source_folders:
                 destination_path = os.path.join(destination_folder, file)
                 shutil.move(source_path, destination_path)
 
-print("File Merging Completed")
+print("File Merge Completed")
 
 shutil.rmtree('{}/simple_images'.format(main_dir_name))
