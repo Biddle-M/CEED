@@ -2,8 +2,6 @@
 
 main_dir_name = "/Users/michaelbiddle/CEED_RP/pipe_bends"
 
-best_pt_directory = "/Users/michaelbiddle/CEED_RP/pipe_bends/yolov7/runs/train/yolov7-custom/weights"
-
 test_images_dir = "/Users/michaelbiddle/CEED_RP/pipe_bends/test_images"
 
 """ """
@@ -15,7 +13,7 @@ print("Moving best.pt Into yolov7 Directory")
 
 file_name = "best.pt"
 new_file_name = "yolov7_custom.pt"
-source_directory = best_pt_directory
+source_directory = '{}/yolov7/runs/train/yolov7-custom/weights'.format(main_dir_name)
 destination_directory = "{}/yolov7".format(main_dir_name)
 source_path = os.path.join(source_directory, file_name)
 destination_path = os.path.join(destination_directory, new_file_name)
