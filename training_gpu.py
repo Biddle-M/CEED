@@ -1,14 +1,14 @@
 """ Enter following details """
 
-main_dir_name = "/home/mbiddle"
+main_dir_name = "/Users/michaelbiddle/CEED_RP/pipe_bends"
 
 num_of_classes = 1
 
-name_of_classes = ["Radiator"]
+name_of_classes = ["Pipe Bend"]
 
-images_dir = "/group/pmc013/mbiddle/images"
+images_dir = "/Users/michaelbiddle/CEED_RP/pipe_bends/images"
 
-labels_dir = "/group/pmc013/mbiddle/labels"
+labels_dir = "/Users/michaelbiddle/CEED_RP/pipe_bends/labels"
 
 proportion_train_images = 0.9
 
@@ -121,6 +121,3 @@ import subprocess
 subprocess.run(["python", "{}/yolov7/train.py".format(main_dir_name), "--workers", workers, "--device", device, "--batch-size", batchsize, "--epochs", epochs, "--img", img1, img2, "--data", "{}/yolov7/data/custom_data.yaml".format(main_dir_name), "--hyp", "{}/yolov7/data/hyp.scratch.custom.yaml".format(main_dir_name), "--cfg", "{}/yolov7/cfg/training/yolov7.yaml".format(main_dir_name), "--name", "yolov7-custom", "--weights", "{}/yolov7/yolov7.pt".format(main_dir_name)])
 
 print("Training Completed")
-
-#shutil.rmtree('{}/yolov7/data/train'.format(main_dir_name))
-#shutil.rmtree('{}/yolov7/data/val'.format(main_dir_name))
