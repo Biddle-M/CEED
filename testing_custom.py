@@ -1,12 +1,10 @@
 """ Enter following details """
 
-main_dir_name = "/home/mbiddle"
+main_dir_name = "/Users/michaelbiddle/CEED_RP/pipe_bends"
 
-training_results_dir = "/scratch/pmc013/mbiddle/CEED"
+best_pt_directory = "/Users/michaelbiddle/CEED_RP/pipe_bends/yolov7/runs/train/yolov7-custom/weights"
 
-batch_number = 'pipe_bends2'
-
-test_images_dir = "/group/pmc013/mbiddle/test_images"
+test_images_dir = "/Users/michaelbiddle/CEED_RP/pipe_bends/test_images"
 
 """ """
 
@@ -17,7 +15,7 @@ print("Moving best.pt Into yolov7 Directory")
 
 file_name = "best.pt"
 new_file_name = "yolov7_custom.pt"
-source_directory = '{}/{}/runs/train/yolov7-custom/weights'.format(training_results_dir, batch_number)
+source_directory = best_pt_directory
 destination_directory = "{}/yolov7".format(main_dir_name)
 source_path = os.path.join(source_directory, file_name)
 destination_path = os.path.join(destination_directory, new_file_name)
