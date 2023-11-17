@@ -1,8 +1,8 @@
 """ Enter following details """
 
-main_dir_name = input("Enter Path to Main Directory: ")
+main_dir_name = "/Users/michaelbiddle/CEED_RP/pipe_bends"
 
-test_images_dir = input("Enter Path to Directory With All Testing Images: ")
+test_images_dir = "/Users/michaelbiddle/CEED_RP/pipe_bends/test_images"
 
 """ """
 
