@@ -1,16 +1,10 @@
 """ Enter following details """
 
-main_dir_name = input("Enter Path to Main Directory: ")
+main_dir_name = "/Users/michaelbiddle/CEED_RP/pipe_bends"
 
-num_keywords = int(input("Enter Number of Keywords: "))
+keywords = ["pipe bend", "pipes service room", "water pipe bend", "drainage pipe bend", "service pipe bend", "plant room boiler pipes", "ceiling void pipes"]
 
-keywords = []
-
-for num in range(num_keywords):
-     new_keyword = input("Keyword {}: ".format(num + 1))
-     keywords.append(new_keyword)
-
-num_of_images = int(input("Number of Images to Search for Each Keyword: "))
+num_of_images = 500
 
 """ """
 
@@ -49,5 +43,3 @@ for folder in source_folders:
 print("File Merging Completed")
 
 shutil.rmtree('{}/simple_images'.format(main_dir_name))
-
-print("NEXT STEP: Filter Images, and Complete LabelImg")
