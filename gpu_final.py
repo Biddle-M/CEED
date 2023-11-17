@@ -1,36 +1,4 @@
-"""
-
-print('Extracting variables from input_details.txt')
-
-text_file = '/home/mbiddle/CEED/input_details.txt'
-
-with open(text_file, 'r') as file:
-    content = file.readlines()
-
-variables = {}
-for line in content:
-    key, value = line.strip().split('=')
-    if ',' in value:
-        value = value.split(',')
-    variables[key] = value
-
-main_dir_name = variables['main_dir_name']
-num_of_classes = int(variables['num_of_classes'])
-name_of_classes = variables['name_of_classes']
-images_dir = variables['images_dir']
-labels_dir = variables['labels_dir']
-training_results_dir = variables['training_results_dir']
-batch_number = variables['batch_number']
-test_images_dir = variables['test_images_dir']
-proportion_train_images = '0.9'
-workers = '1'
-device = '0'
-batchsize = '8'
-epochs = '100'
-img1 = '640'
-img2 = '640'
-
-"""
+""" Enter following details """
 
 main_dir_name = "/home/mbiddle"
 
